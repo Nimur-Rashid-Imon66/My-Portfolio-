@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { GiHamburgerMenu } from 'react-icons/gi';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import {Link } from 'react-scroll'
 export default function Navber() {
