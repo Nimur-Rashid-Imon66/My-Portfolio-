@@ -48,7 +48,7 @@ const About = () => {
                 className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full"
             >
                 <div className="pb-4"> 
-                    <p className="text-4xl font-bold inline border-b-4  border-gray-500">About</p>
+                    <p className="text-4xl font-bold inline border-b-4  border-gray-500">About Me</p>
                 </div>
            
                 <p className="text-xl mt-10">
@@ -68,7 +68,7 @@ const About = () => {
                                 links.map((link) => {
                                     return (
                                     <li key={link.id}>
-                                        <a href={link.ref}>
+                                        <a href={link.ref}  target="_blank">
                                         <img src={link.src}className='h-[48px] w-[48px] hover:scale-105'/>
                                         </a>
                                         
