@@ -36,7 +36,7 @@ const Portfolio = () => {
     ]
     console.log(projects);
     return (
-        <div name="portfolio" className='bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-screen font-inter'>
+        <div name="portfolio" className='bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-screen '>
             <div className='max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full  '>
                 <div className='pb-8 mt-14'>
                     <p className='text-4xl font-bold inline border-b-4 border-gray-400'>Portfolio</p>
@@ -47,7 +47,7 @@ const Portfolio = () => {
                       
                         projects.map((project) => {
                             return (
-                            <div key={project.id} className='shadow-md shadow-gray-600 rounded-lg  duration-200'>
+                            <div key={project.id} className='shadow-md shadow-gray-600 rounded-lg '>
                             <img src={project.src} alt="dsaf" title={project.desc} className='rounded-md duration-200  w-full h-[100px] hover:scale-105'/>
                             <div className='flex items-center justify-center '>
                                         <a href={project.ref}

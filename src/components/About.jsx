@@ -8,6 +8,16 @@ const About = () => {
             ref:'https://github.com/Nimur-Rashid-Imon66'
         },
         {
+            id: 8,
+            src: 'linkedin.svg',
+            ref:'https://www.linkedin.com/in/nimur-rashid-imon-03492a1b9/'
+        },
+        {
+            id: 6,
+            src: 'facebook.svg',
+            ref:'https://www.facebook.com/profile.php?id=100006663464883'
+        },
+        {
             id: 2,
             src: 'codeforces.svg',
             ref:'https://codeforces.com/profile/IMON193066'
@@ -27,15 +37,17 @@ const About = () => {
             src: 'leetcode.svg',
             ref:'https://leetcode.com/IMON193066/'
         },
-        {
-            id: 6,
-            src: 'facebook.svg',
-            ref:'https://www.facebook.com/profile.php?id=100006663464883'
-        },
+        
         {
             id: 7,
             src: 'instagram.svg',
             ref:'https://www.instagram.com/naimur_rashed/'
+        },
+        
+        {
+            id: 9,
+            src: 'stoptalk.svg',
+            ref:'https://www.stopstalk.com/user/profile/IMON193066'
         },
     ]
     return (
@@ -51,8 +63,8 @@ const About = () => {
                     <p className="text-4xl font-bold inline border-b-4  border-gray-500">About Me</p>
                 </div>
            
-                <p className="text-xl mt-10">
-                  I am outgoing, dedicated, and open-minded. I get across to people and adjust to changes with ease. I believe that a person should work on developing their professional skills and learning new things all the time. Currently, I am looking for new career opportunities my current job position cannot provide.
+                <p className="text-lg mt-10 text-gray-400">
+                I am outgoing, dedicated, and open-minded. I get across to people and adjust to changes with ease. I believe that a person should work on developing their professional skills and learning new things all the time. Currently, I am looking for new career opportunities that my current job position cannot provide.
                 </p>
 
                 <br />
@@ -61,15 +73,15 @@ const About = () => {
                         className='text-2xl font-semibold border-b-4 inline border-gray-500'>
                        Find Me on  
                     </p>
-                    <div className='py-6'>
+                    <div className='py-6 mx-auto '>
                         
-                        <ul className="flex items-center  gap-8">
+                        <ul className="flex gap-2 flex-shrink-0 ">
                             {
                                 links.map((link) => {
                                     return (
                                     <li key={link.id}>
                                         <a href={link.ref}  target="_blank">
-                                        <img src={link.src}className='h-[48px] w-[48px] hover:scale-105'/>
+                                        <img src={link.src}className='rounded-md h-[48px] w-[48px] hover:scale-105 inline'/>
                                         </a>
                                         
                                         </li>
