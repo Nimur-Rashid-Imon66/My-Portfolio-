@@ -25,6 +25,7 @@ export default function Navber() {
       title :"contact",
      },
     
+    
   ]
   
   return (
@@ -47,7 +48,12 @@ export default function Navber() {
               
               
             }) 
-          }
+        }
+        <li key={8} 
+                className="capitalize cursor-pointer hover:scale-105 duration-200 hover:text-gray-500"
+        >
+          <a href="./Nimur Rashid Imon Resume.pdf" download>Resume</a>
+        </li>
       </ul>
       <div
         onClick={() => setmenu(!menu)} className="cursor-pointer text-white pr-2 z-10 md:hidden ">
