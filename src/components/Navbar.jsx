@@ -73,6 +73,12 @@ export default function Navber() {
                <Link onClick={() => setmenu(!menu)} to={link.title} smooth duration={500}>{link.title}</Link>
               </li>
             })}
+
+              <li key={8} 
+                className="capitalize cursor-pointer text-4xl text-white  px-4 py-6 font-semibold hover:scale-105 duration-200 hover:text-gray-500"
+             >
+          <a href="./Nimur Rashid Imon Resume.pdf" download>Resume</a>
+        </li>
           </ul>
         )
       }
