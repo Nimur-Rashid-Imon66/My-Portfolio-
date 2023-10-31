@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'logo': ['Shadows Into Light']
+        'logo': ['Shadows Into Light'],
+        'inter':['Inter']
       }
     },
   },

@@ -28,18 +28,18 @@ export default function Navber() {
   ]
   
   return (
-      <div className="flex justify-between items-center  w-full bg-black h-16 px-4 fixed">
+      <div className="flex justify-between items-center  w-full bg-black h-16 px-4 fixed font-inter">
       <div>
           <h1 className=" text-white text-4xl font-bold font-logo  hover:animate-pulse hover:scale-105 duration-200 ">NRI</h1>
       </div>
           
           
-      <ul className="hidden md:flex gap-3 text-white mr-4">
+      <ul className="hidden md:flex gap-8 text-white mr-4">
           {
           links.map((link) => {
               return <li
                 key={link.id} 
-                className="capitalize cursor-pointer font-semibold hover:scale-105 duration-200 hover:text-gray-500"
+                className="capitalize cursor-pointer hover:scale-105 duration-200 hover:text-gray-500"
               >
                 {/* {link.title} */}
                 <Link to={link.title} smooth duration={500}>{link.title}</Link>
@@ -70,8 +70,5 @@ export default function Navber() {
           </ul>
         )
       }
-      
-      </div>
-
-    )
+      </div>)
  }

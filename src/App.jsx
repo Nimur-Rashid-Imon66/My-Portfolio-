@@ -7,7 +7,7 @@ import Contact from './components/Contact.jsx';
 
 export default function App() {
   return (
-    <div>
+    <div className="font-inter">
       <Navbar />
       <Home />
       <About />

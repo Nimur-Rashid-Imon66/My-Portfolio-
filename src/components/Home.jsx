@@ -4,9 +4,9 @@ import React from 'react';
 function Home() {
     console.log('../assets/propic.png');
     return (
-        <div name="home" className="flex flex-col justify-center items-center w-full bg-gradient-to-b from-black h-screen to-gray-800 mx-auto px-4 md:flex-row gap-4">
+        <div name="home" className="flex flex-col justify-center items-center w-full bg-gradient-to-b from-black h-screen to-gray-800 mx-auto px-4 md:flex-row gap-4 font-inter">
             <div className="">
-                <h1 className="text-white  text-4xl px-2  md:px-12 font-semibold">Hey I'am Full Stack Developer</h1>
+                <h1 className="text-white  text-4xl px-2  md:px-12 font-semibold">I'am Frontend Developer</h1>
                 <p className='text-gray-400 py-6 px-2 md:px-12 ' >Also a passionete competitive programmer. <br />
                 I perticiated more then 200+ programming contest both online and ofline </p>
                 
@@ -17,7 +17,7 @@ function Home() {
                     </button>
                  </div> */}
             </div>
-            <img src='../propic.jpg' className='h-[240px] w-[240px]  rounded-xl object-fill
+            <img src='../propic.jpg' className='h-[240px] w-[240px]  rounded-[50%] object-fill
                  ' />
         </div>
     );
