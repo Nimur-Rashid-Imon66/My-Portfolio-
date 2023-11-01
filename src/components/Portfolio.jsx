@@ -7,31 +7,36 @@ const Portfolio = () => {
             id: 1,
             src: '../project1.jpg',
             desc: "HTML & CSS-NonResponsive",
-            ref:'https://github.com/Nimur-Rashid-Imon66/IIUCWDS-A7-Forntend'
+            ref: 'https://github.com/Nimur-Rashid-Imon66/IIUCWDS-A7-Forntend',
+            demo: 'https://nimur-rashid-imon66.github.io/IIUCWDS-A7-Forntend/'
         },
         {
             id: 2,
             src:'../project2.jpg',
             desc:"HTML & CSS-Responsive ",
-            ref:'https://github.com/Nimur-Rashid-Imon66/IIUCWDS-A8-Forntend.'
+            ref:'https://github.com/Nimur-Rashid-Imon66/IIUCWDS-A8-Forntend.',
+            demo: 'https://nimur-rashid-imon66.github.io/IIUCWDS-A8-Forntend./'
         },
         {
             id: 3,
             src: '../project3.jpg',
             desc:"HTML & Tailwind-NonResponsive",
-            ref:'https://github.com/Nimur-Rashid-Imon66/IIUCWDS-A9-Forntend'
+            ref:'https://github.com/Nimur-Rashid-Imon66/IIUCWDS-A9-Forntend',
+            demo: 'https://nimur-rashid-imon66.github.io/IIUCWDS-A9-Forntend/'
         },
         {
             id: 4,
             src: '../project4.jpg',
             desc:"React.js & Tailwind",
-            ref:'https://github.com/Nimur-Rashid-Imon66/Nimur-Rashid-Imon66-IIUCWPS-A14-React-QuizApp'
+            ref:'https://github.com/Nimur-Rashid-Imon66/Nimur-Rashid-Imon66-IIUCWPS-A14-React-QuizApp',
+            demo: ' https://nimur-rashid-imon66.github.io/Nimur-Rashid-Imon66-IIUCWPS-A14-React-QuizApp/'
         },
         {
             id: 5,
             src: '../project5.jpg',
             desc:"React.js & Tailwind",
-            ref:'https://github.com/Nimur-Rashid-Imon66/My-Portfolio-'
+            ref:'https://github.com/Nimur-Rashid-Imon66/My-Portfolio-',
+            demo: ''
         },
     ]
     console.log(projects);
@@ -49,14 +54,19 @@ const Portfolio = () => {
                             return (
                             <div key={project.id} className='shadow-md shadow-gray-600 rounded-lg '>
                             <img src={project.src} alt="dsaf" title={project.desc} className='rounded-md duration-200  w-full h-[100px] hover:scale-105'/>
-                            <div className='flex items-center justify-center '>
+                            <div className='flex items-center justify-around '>
                                         <a href={project.ref}
                                             target="_blank"
                                             className='w-1/2 px-3 py-2 m-4 duration-200 hover:scale-105'>
-                                            See Code
+                                            Code
                                         </a>
-                                {/* <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>Demo</button> */}
-                            </div>
+                                    
+                                        <a href={project.demo}
+                                            target={"_blank"}
+                                            className='w-1/2 px-3 py-2 m-4 duration-200 hover:scale-105'>
+                                            Demo
+                                        </a>
+                                 </div>
                         </div>) 
                         })
                     }

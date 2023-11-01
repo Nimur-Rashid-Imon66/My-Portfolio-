@@ -42,7 +42,7 @@ export default function Navber() {
                 key={link.id} 
                 className="capitalize cursor-pointer hover:scale-105 duration-200 hover:text-gray-500"
               >
-                {/* {link.title} */}
+               
                 <Link to={link.title} smooth duration={500}>{link.title}</Link>
               </li>
               
@@ -69,7 +69,7 @@ export default function Navber() {
                 key={link.id}
                  
                 className=" capitalize cursor-pointer text-4xl text-white  px-4 py-6 font-semibold hover:scale-105 duration-200 hover:text-gray-500">
-                {/* {link.title} */}
+        
                <Link onClick={() => setmenu(!menu)} to={link.title} smooth duration={500}>{link.title}</Link>
               </li>
             })}

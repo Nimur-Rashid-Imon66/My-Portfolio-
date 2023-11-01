@@ -8,7 +8,6 @@ const Footer = () => {
                 <div className=" flex flex-col md:items-end py-2 sm:py-0 ">
 
                 <p className="text-white text-center text-xs" >Developed by <span className="text-yellow-300">Nimur Rashid Imon</span></p>
-                <p className="text-white text-center text-xs" >Inspired by <span className="text-yellow-300">Yash Patel</span></p>
                 </div>
                 
                 
