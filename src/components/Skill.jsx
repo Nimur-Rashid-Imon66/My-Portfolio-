@@ -84,8 +84,8 @@ const Skill = () => {
 
                     {
                         skills.map((e) => { return (
-                            <div key={e.id} className='shadow-md hover:shadow-xl hover:shadow-gray-600 shadow-gray-600 rounded-lg  py-4 flex flex-col gap-5 '>
-                                <div className='flex gap-5 items-center  justify-center border-b rounded-b-md border-b-gray-600 p-3 '>
+                            <div key={e.id} className='shadow-md hover:shadow-xl hover:shadow-gray-600 shadow-gray-600 rounded-xl  py-4 flex flex-col gap-5 bg-gray-900 '>
+                                <div className='flex gap-5 items-center  justify-center border-b rounded-b-md border-b-gray-600 py-6 '>
                                 {
 
                                     e.item.map((e) => {
