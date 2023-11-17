@@ -30,14 +30,7 @@ const Portfolio = () => {
             desc:"React.js & Tailwind",
             ref:'https://github.com/Nimur-Rashid-Imon66/Nimur-Rashid-Imon66-IIUCWPS-A14-React-QuizApp',
             demo: ' https://nimur-rashid-imon66.github.io/Nimur-Rashid-Imon66-IIUCWPS-A14-React-QuizApp/'
-        },
-        {
-            id: 5,
-            src: '../project5.jpg',
-            desc:"React.js & Tailwind",
-            ref:'https://github.com/Nimur-Rashid-Imon66/My-Portfolio-',
-            demo: ''
-        },
+        }
     ]
     console.log(projects);
     return (
@@ -69,8 +62,25 @@ const Portfolio = () => {
                                  </div>
                         </div>) 
                         })
+
                     }
-                    
+                    {/* for this project */}
+                    <div key={5} className='shadow-md shadow-gray-600 rounded-lg '>
+                            <img src={'../project5.jpg'} alt="dsaf" title={"React.js & Tailwind"} className='rounded-md duration-200  w-full h-[100px] hover:scale-105'/>
+                            <div className='flex items-center justify-around '>
+                                        <a href={'https://github.com/Nimur-Rashid-Imon66/My-Portfolio-'}
+                                            target="_blank"
+                                            className='w-1/2 px-3 py-2 m-4 duration-200 hover:scale-105'>
+                                            Code
+                                        </a>
+                                        <button
+                                            onClick={() => { window.scrollTo({ top: 0, behavior: 'smooth' }); }}
+                                            className='w-1/2 px-3 py-2 m-4 duration-200 hover:scale-105'>
+                                            Demo
+                                        </button>
+                                        
+                                 </div>
+                        </div>
                 </div>
              </div>
 
