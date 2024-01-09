@@ -14,16 +14,21 @@ export default function Navber() {
     },
     {
       id: 3,
-      title :"portfolio",
+      title :"CP",
     },
     {
       id: 4,
-      title :"skill",
+      title :"portfolio",
     },
     {
       id: 5,
+      title :"skill",
+    },
+    {
+      id: 6,
       title :"contact",
-     },
+    },
+  
     
     
   ]

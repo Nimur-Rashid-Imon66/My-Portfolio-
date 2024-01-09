@@ -5,6 +5,7 @@ import Portfolio from './components/Portfolio.jsx';
 import Contact from './components/Contact.jsx';
 import Footer from './components/Footer.jsx';
 import Skill from './components/Skill.jsx';
+import CompetitiveProgramming from './components/CompetitiveProgramming.jsx';
 
 
 export default function App() {
@@ -13,6 +14,7 @@ export default function App() {
       <Navbar />
       <Home />
       <About />
+      <CompetitiveProgramming />
       <Portfolio />
       <Skill />
       <Contact />
