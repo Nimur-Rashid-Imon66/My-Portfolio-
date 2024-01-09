@@ -50,14 +50,13 @@ const CompetitiveProgramming = () => {
                     <p className='text-4xl font-bold inline border-b-4 border-gray-400'>Competitive Programming</p>
                 </div>
 
-                <div className='grid sm:grid-cols-1 md:grid-cols-3 gap-8 px-12 pt-8 sm:px-0 w-[90%]  mx-auto'>
+                <div className='grid sm:grid-cols-1 md:grid-cols-3 gap-8 px-12 pt-8 sm:px-0 w-[95%]  mx-auto'>
                     
                     {
-                      
                       oj.map((oj) => {
                             //project.id,project.desc,project.src,project.ref,project.demo
                             return (
-                                <div key={oj.id} className='shadow-md shadow-gray-600 rounded-lg py-4 px-2'>
+                                <div key={oj.id} className='shadow-md shadow-gray-600 rounded-lg py-4 px-2 w-'>
                                 <div className='flex items-center'>
                                     <img src={oj.src} alt="dsaf" title='CF' className='pl-3 pr-3 pt-2 rounded-md duration-200  w-[46px] h-[46px] hover:scale-105' />
                                     <a href={oj.ref}
