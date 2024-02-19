@@ -15,7 +15,7 @@ function Home() {
             <div className="flex flex-col items-center justify-center py-[15%] md:flex-row ">
 
                 <div className="pt-10">
-                    <h1 className="flex flex-col md:flex-row text-white  text-4xl px-2  md:px-12 font-semibold">{`I'am a `}
+                    <h1 className="flex flex-col md:flex-row text-white  text-4xl px-2  md:px-12 font-semibold">{`I'm a `}
                     <span className="text-4xl text-orange-500 md:ml-2">
                             {
                                 text

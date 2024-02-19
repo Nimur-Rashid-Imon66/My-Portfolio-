@@ -6,8 +6,8 @@ const CompetitiveProgramming = () => {
             id: 1,
             src: '../codeforces.svg',
             handle: 'IMON193066',
-            rating: "1257",
-            solvecout:'816+',
+            rating: "1261",
+            solvecout:'824+',
             contest:'160+',
             ref: 'https://codeforces.com/profile/IMON193066',
             // demo:'https://nimur-rashid-imon66.github.io/IIUCWDS-A7-Forntend/'
