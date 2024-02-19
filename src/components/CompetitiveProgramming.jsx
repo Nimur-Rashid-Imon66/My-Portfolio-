@@ -27,7 +27,7 @@ const CompetitiveProgramming = () => {
             src: '../leetcode.svg',
             handle: 'IMON193066',
             rating: "0",
-            solvecout:'58+',
+            solvecout:'100+',
             contest:'0',
             ref:'https://leetcode.com/IMON193066/',
             // demo: 'https://nimur-rashid-imon66.github.io/IIUCWDS-A9-Forntend/'
@@ -84,3 +84,7 @@ const CompetitiveProgramming = () => {
 };
 
 export default CompetitiveProgramming;
+
+
+
+
