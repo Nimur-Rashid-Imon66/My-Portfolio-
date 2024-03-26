@@ -14,16 +14,6 @@ const CompetitiveProgramming = () => {
         },
         {
             id: 2,
-            src:'../codechef.svg',
-            handle: 'imon193066',
-            rating: "1585",
-            solvecout:'45+',
-            contest:'12+',
-            ref:'https://www.codechef.com/users/imon193066',
-            // demo: 'https://nimur-rashid-imon66.github.io/IIUCWDS-A8-Forntend./'
-        },
-        {
-            id: 3,
             src: '../leetcode.svg',
             handle: 'IMON193066',
             rating: "0",
@@ -32,6 +22,17 @@ const CompetitiveProgramming = () => {
             ref:'https://leetcode.com/IMON193066/',
             // demo: 'https://nimur-rashid-imon66.github.io/IIUCWDS-A9-Forntend/'
         },
+        {
+            id: 3,
+            src:'../codechef.svg',
+            handle: 'imon193066',
+            rating: "1612",
+            solvecout:'45+',
+            contest:'12+',
+            ref:'https://www.codechef.com/users/imon193066',
+            // demo: 'https://nimur-rashid-imon66.github.io/IIUCWDS-A8-Forntend./'
+        },
+        
         {
             id: 4,
             src: '../atcoder.svg',
