@@ -26,11 +26,12 @@ export default function Navber() {
     },
     {
       id: 6,
+      title :"experience",
+    },
+    {
+      id: 7,
       title :"contact",
     },
-  
-    
-    
   ]
   
   return (

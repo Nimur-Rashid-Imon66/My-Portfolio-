@@ -32,7 +32,6 @@ const Portfolio = () => {
             demo: ' https://nimur-rashid-imon66.github.io/Nimur-Rashid-Imon66-IIUCWPS-A14-React-QuizApp/'
         }
     ]
-    console.log(projects);
     return (
         <div name="portfolio" className='bg-gradient-to-b from-gray-800 to-black w-full text-white md:h-screen '>
             <div className='max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full  '>
@@ -42,7 +41,6 @@ const Portfolio = () => {
                 </div>
                 <div className='grid sm:grid-cols-1 md:grid-cols-3 gap-8 px-12 sm:px-0 w-[90%]  mx-auto'>
                     {
-                      
                         projects.map((project) => {
                             return (
                             <div key={project.id} className='shadow-md shadow-gray-600 rounded-lg '>
