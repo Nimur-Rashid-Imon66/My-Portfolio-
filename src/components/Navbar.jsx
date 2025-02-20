@@ -35,7 +35,7 @@ export default function Navber() {
   ]
   
   return (
-      <div className="flex justify-between items-center  w-full bg-black h-16 px-4 fixed font-inter">
+      <div className="flex justify-between items-center  w-full bg-black h-16 px-4 fixed font-inter z-[1]">
       <div>
           <h1 className=" text-white text-4xl font-bold font-logo  hover:animate-pulse hover:scale-105 duration-200 ">NRI</h1>
       </div>

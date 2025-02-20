@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Portfolio = () => {
 
     const projects = [
@@ -12,23 +10,23 @@ const Portfolio = () => {
         },
         {
             id: 2,
-            src:'../project2.jpg',
-            desc:"HTML & CSS-Responsive ",
-            ref:'https://github.com/Nimur-Rashid-Imon66/IIUCWDS-A8-Forntend.',
+            src: '../project2.jpg',
+            desc: "HTML & CSS-Responsive ",
+            ref: 'https://github.com/Nimur-Rashid-Imon66/IIUCWDS-A8-Forntend.',
             demo: 'https://nimur-rashid-imon66.github.io/IIUCWDS-A8-Forntend./'
         },
         {
             id: 3,
             src: '../project3.jpg',
-            desc:"HTML & Tailwind-NonResponsive",
-            ref:'https://github.com/Nimur-Rashid-Imon66/IIUCWDS-A9-Forntend',
+            desc: "HTML & Tailwind-NonResponsive",
+            ref: 'https://github.com/Nimur-Rashid-Imon66/IIUCWDS-A9-Forntend',
             demo: 'https://nimur-rashid-imon66.github.io/IIUCWDS-A9-Forntend/'
         },
         {
             id: 4,
             src: '../project4.jpg',
-            desc:"React.js & Tailwind",
-            ref:'https://github.com/Nimur-Rashid-Imon66/Nimur-Rashid-Imon66-IIUCWPS-A14-React-QuizApp',
+            desc: "React.js & Tailwind",
+            ref: 'https://github.com/Nimur-Rashid-Imon66/Nimur-Rashid-Imon66-IIUCWPS-A14-React-QuizApp',
             demo: ' https://nimur-rashid-imon66.github.io/Nimur-Rashid-Imon66-IIUCWPS-A14-React-QuizApp/'
         }
     ]
@@ -43,44 +41,47 @@ const Portfolio = () => {
                     {
                         projects.map((project) => {
                             return (
-                            <div key={project.id} className='shadow-md shadow-gray-600 rounded-lg '>
-                            <img src={project.src} alt="dsaf" title={project.desc} className='rounded-md duration-200  w-full h-[100px] hover:scale-105'/>
-                            <div className='flex items-center justify-around '>
+                                <div key={project.id} className='shadow-md shadow-gray-600 rounded-lg '>
+                                    <img src={project.src} alt="dsaf" title={project.desc} className='rounded-md duration-200  w-full h-[100px] hover:scale-105' />
+                                    <div className='flex items-center justify-around '>
                                         <a href={project.ref}
+                                            rel="noreferrer"
                                             target="_blank"
                                             className='w-1/2 px-3 py-2 m-4 duration-200 hover:scale-105'>
                                             Code
                                         </a>
-                                    
+
                                         <a href={project.demo}
+                                            rel="noreferrer"
                                             target={"_blank"}
                                             className='w-1/2 px-3 py-2 m-4 duration-200 hover:scale-105'>
                                             Demo
                                         </a>
-                                 </div>
-                        </div>) 
+                                    </div>
+                                </div>)
                         })
 
                     }
                     {/* for this project */}
                     <div key={5} className='shadow-md shadow-gray-600 rounded-lg '>
-                            <img src={'../project5.jpg'} alt="dsaf" title={"React.js & Tailwind"} className='rounded-md duration-200  w-full h-[100px] hover:scale-105'/>
-                            <div className='flex items-center justify-around '>
-                                        <a href={'https://github.com/Nimur-Rashid-Imon66/My-Portfolio-'}
-                                            target="_blank"
-                                            className='w-1/2 px-3 py-2 m-4 duration-200 hover:scale-105'>
-                                            Code
-                                        </a>
-                                        <button
-                                            onClick={() => { window.scrollTo({ top: 0, behavior: 'smooth' }); }}
-                                            className='w-1/2 px-3 py-2 m-4 duration-200 hover:scale-105'>
-                                            Demo
-                                        </button>
-                                        
-                                 </div>
+                        <img src={'../project5.jpg'} alt="dsaf" title={"React.js & Tailwind"} className='rounded-md duration-200  w-full h-[100px] hover:scale-105' />
+                        <div className='flex items-center justify-around '>
+                            <a href={'https://github.com/Nimur-Rashid-Imon66/My-Portfolio-'}
+                                rel="noreferrer"
+                                target="_blank"
+                                className='w-1/2 px-3 py-2 m-4 duration-200 hover:scale-105'>
+                                Code
+                            </a>
+                            <button
+                                onClick={() => { window.scrollTo({ top: 0, behavior: 'smooth' }); }}
+                                className='w-1/2 px-3 py-2 m-4 duration-200 hover:scale-105'>
+                                Demo
+                            </button>
+
                         </div>
+                    </div>
                 </div>
-             </div>
+            </div>
 
         </div>
     );

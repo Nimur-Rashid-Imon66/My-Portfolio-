@@ -1,5 +1,3 @@
-import React from 'react';
-
 const CompetitiveProgramming = () => {
     const oj = [
         {
@@ -60,7 +58,8 @@ const CompetitiveProgramming = () => {
                                 <div key={oj.id} className='shadow-md shadow-gray-600 rounded-lg py-4 px-2 w-'>
                                 <div className='flex items-center'>
                                     <img src={oj.src} alt="dsaf" title='CF' className='pl-3 pr-3 pt-2 rounded-md duration-200  w-[46px] h-[46px] hover:scale-105' />
-                                    <a href={oj.ref}
+                                        <a href={oj.ref}
+                                            rel="noreferrer"
                                         target={"_blank"}
                                         className='pt-3 text-[20px] hover:scale-105 font-semibold'>{oj.handle}</a>
                                     <img src='../link.svg' className='w-5 h-5 pt-2'/>

@@ -6,6 +6,7 @@ import Contact from './components/Contact.jsx';
 import Footer from './components/Footer.jsx';
 import Skill from './components/Skill.jsx';
 import CompetitiveProgramming from './components/CompetitiveProgramming.jsx';
+import Experience from './components/Experience.jsx';
 
 
 export default function App() {
@@ -17,6 +18,7 @@ export default function App() {
       <CompetitiveProgramming />
       <Portfolio />
       <Skill />
+      <Experience />
       <Contact />
       <Footer />
     </div>
