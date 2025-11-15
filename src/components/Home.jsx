@@ -1,11 +1,16 @@
-import { useTypewriter,Cursor} from 'react-simple-typewriter';
+import { useTypewriter, Cursor } from 'react-simple-typewriter';
+import { TYPING_WORDS, TYPEWRITER_CONFIG } from '../constants';
 
+/**
+ * Home/Hero section component with typewriter effect
+ * @returns {JSX.Element} Home component
+ */
 function Home() {
     const [text] = useTypewriter({
-        words: ['Competitive Programmer.', 'Software Engineer.'] ,
+        words: TYPING_WORDS,
         loop: {},
-        typeSpeed: 120,
-        deleteSpeed: 80,
+        typeSpeed: TYPEWRITER_CONFIG.typeSpeed,
+        deleteSpeed: TYPEWRITER_CONFIG.deleteSpeed,
     }); 
     return (
         <div name="home" className="w-full bg-gradient-to-b from-black  to-gray-800 md:h-screen">
@@ -24,7 +29,7 @@ function Home() {
                     <p className='text-gray-400 py-6 px-2 md:px-12 max-w-2xl ' >I’m a software engineer and competitive programmer who loves solving problems and building smooth, high-performing web applications. At <b>AppifyLab</b>, I work on improving performance, adding new features, and fixing bugs. Before that, I sharpened my skills in JavaScript, React, and Adonis by working on real projects. I also spent a year mentoring students in competitive programming at <b>IIUC</b> helping them tackle tricky coding challenges. I enjoy turning ideas into clean, efficient solutions—check out my portfolio to see what I’ve built!</p>
                 </div>
                 <div >
-                <img src='../propic.jpg' className='rounded-xl h-[310px] w-[250px] object-left' />
+                <img src='../propic.jpg' alt="Profile" className='rounded-xl h-[310px] w-[250px] object-left' />
                     <hr className='hidden md:block md:border-4 mt-4 rounded-xl '/>
                 </div>
           </div>
