@@ -1,4 +1,5 @@
 import { projects } from '../data/projects';
+import { scrollToTop } from '../utils/helpers';
 
 /**
  * Portfolio section displaying project showcase
@@ -35,7 +36,7 @@ const Portfolio = () => {
                                             </a>
                                         ) : (
                                             <button
-                                                onClick={() => { window.scrollTo({ top: 0, behavior: 'smooth' }); }}
+                                                onClick={scrollToTop}
                                                 className='w-1/2 px-3 py-2 m-4 duration-200 hover:scale-105'>
                                                 Demo
                                             </button>
