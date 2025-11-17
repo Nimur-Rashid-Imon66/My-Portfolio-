@@ -1,7 +1,7 @@
-# Live Demo
+# Portfolio Website - Nimur Rashid Imon
 
-Check out the live portfolio: [https://nimur-rashid.is-a.dev/](https://nimur-rashid.is-a.dev/) 🚀
+A modern, responsive personal portfolio website showcasing projects, skills, competitive programming achievements, and professional experience. Built with React, Vite, and Tailwind CSS.
 
-A responsive personal portfolio showcasing projects, skills, and contact information. Open the link in your browser to explore the site.
+## 🚀 Live Demo
 
-If the demo doesn't load, see the "Getting Started" section to run the project locally or file an issue.
+Check out the live portfolio: [https://nimur-rashid.is-a.dev/](https://nimur-rashid.is-a.dev/)
