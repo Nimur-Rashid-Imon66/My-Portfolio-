@@ -1,4 +1,3 @@
-import About from './components/About.jsx';
 import Home from './components/Home.jsx';
 import Navbar from './components/Navbar.jsx';
 import Portfolio from './components/Portfolio.jsx';
@@ -19,7 +18,6 @@ export default function App() {
       <div>
         <Navbar />
         <Home />
-        <About />
         <CompetitiveProgramming />
         <Portfolio />
         <Skill />
