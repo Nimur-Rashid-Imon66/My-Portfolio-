@@ -18,7 +18,7 @@ const Experience = () => {
                     {/* Vertical line for timeline */}
                     <div className='hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-orange-500 to-gray-600'></div>
                     
-                    {experiences.map(({ id, title, company, duration, description }, index) => (
+                    {experiences.map(({ id, title, company, location, duration, highlights }, index) => (
                         <div key={id} className={`relative mb-12 md:mb-16 ${index % 2 === 0 ? 'md:pr-1/2' : 'md:pl-1/2'}`}>
                             {/* Timeline content */}
                             <div className={`flex flex-col md:flex-row items-center ${index % 2 === 0 ? 'md:justify-end' : 'md:justify-start'}`}>
@@ -30,11 +30,26 @@ const Experience = () => {
                                     </div>
                                     
                                     <h3 className='text-xl md:text-2xl font-bold text-white mb-2'>{title}</h3>
-                                    <p className='text-orange-400 font-semibold mb-3 flex items-center'>
-                                        <span className='mr-2'>📍</span>
+                                    <p className='text-orange-400 font-semibold mb-1 flex items-center'>
+                                        <span className='mr-2'>🏢</span>
                                         {company}
                                     </p>
-                                    <p className='text-gray-300 leading-relaxed'>{description}</p>
+                                    <p className='text-gray-400 text-sm mb-3 flex items-center'>
+                                        <span className='mr-2'>📍</span>
+                                        {location}
+                                    </p>
+                                    
+                                    {/* Highlights as bullet points */}
+                                    {highlights && highlights.length > 0 && (
+                                        <ul className='text-gray-300 text-sm leading-relaxed space-y-2 mt-4'>
+                                            {highlights.map((highlight, idx) => (
+                                                <li key={idx} className='flex items-start'>
+                                                    <span className='text-orange-500 mr-2 mt-1 flex-shrink-0'>•</span>
+                                                    <span>{highlight}</span>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    )}
                                 </div>
                                 
                                 {/* Timeline dot */}
