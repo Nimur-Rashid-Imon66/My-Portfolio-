@@ -3,83 +3,165 @@
  * @type {Array<{id: number, src: string, item: Array<{id: number, link: string, name: string}>}>}
  */
 export const skills = [
-  {
+    {
     id: 1,
-    src: 'FRONT-END',
+    src: "PROGRAMMING LANGUAGES",
+    item: [
+      {
+        id: 1,
+        link: "../js.svg",
+        name: "JavaScript",
+      },
+      {
+        id: 2,
+        link: "../ts.svg",
+        name: "TypeScript",
+      },
+      {
+        id: 3,
+        link: "../c.svg",
+        name: "C Programming",
+      },
+      {
+        id: 4,
+        link: "../cpp.svg",
+        name: "C++",
+      },
+    ],
+  },
+  {
+    id: 5,
+    src: "FRONT-END",
     item: [
       {
         id: 1,
         link: "../html.svg",
-        name: "HTML"
+        name: "HTML",
       },
       {
         id: 2,
         link: "../css.svg",
-        name: "CSS"
+        name: "CSS",
       },
       {
         id: 3,
         link: "../tailwind.svg",
-        name: "Tailwind CSS"
+        name: "Tailwind CSS",
       },
       {
         id: 4,
-        link: "../js.svg",
-        name: "JavaScript"
+        link: "../react.svg",
+        name: "React",
       },
       {
         id: 5,
-        link: "../react.svg",
-        name: "React"
+        link: "../redux.svg",
+        name: "Redux Toolkit",
       },
-    ]
+      {
+        id: 6,
+        link: "nextjs.svg",
+        name: "Next.js",
+      },
+    ],
   },
   {
     id: 2,
-    src: 'BACK-END',
+    src: "BACK-END",
     item: [
       {
         id: 1,
         link: "../nodejs.svg",
-        name: "Node.js"
+        name: "Node.js",
       },
       {
         id: 2,
         link: "../express.svg",
-        name: "Express"
+        name: "Express",
       },
-    ]
+      {
+        id: 3,
+        link: "../nestjs.svg",
+        name: "NestJS",
+      },
+      {
+        id: 4,
+        link: "../adonisjs.svg",
+        name: "AdonisJS",
+      },
+      {
+        id: 5,
+        link: "../lucid.svg",
+        name: "Lucid ORM",
+      },
+    ],
   },
   {
     id: 3,
-    src: 'DATABASE',
+    src: "DATA STORAGE",
     item: [
       {
         id: 1,
         link: "../oracle.svg",
-        name: "Oracle"
+        name: "Oracle",
       },
       {
         id: 2,
         link: "../mysql.svg",
-        name: "MySQL"
+        name: "MySQL",
       },
-    ]
+      {
+        id: 3,
+        link: "../mongodb.svg",
+        name: "MongoDB",
+      },
+      {
+        id: 4,
+        link: "../redis.svg",
+        name: "Redis",
+      },
+    ],
   },
   {
     id: 4,
-    src: 'SOURCE CONTROL',
+    src: "SOURCE CONTROL",
     item: [
       {
         id: 1,
         link: "../git.svg",
-        name: "Git"
+        name: "Git",
       },
       {
         id: 2,
         link: "../github.svg",
-        name: "GitHub"
+        name: "GitHub",
       },
-    ]
-  }
+    ],
+  },
+  {
+    id: 6,
+    src: "OTHER TOOLS",
+    item: [
+      {
+        id: 1,
+        link: "../docker.svg",
+        name: "Docker",
+      },
+      {
+        id: 2,
+        link: "../postman.svg",
+        name: "Postman",
+      },
+      {
+        id: 3,
+        link: "../vscode.svg",
+        name: "VS Code",
+      },
+      {
+        id: 4,
+        link: "../trello.svg",
+        name: "Trello",
+      }
+    ],
+  },
 ];
