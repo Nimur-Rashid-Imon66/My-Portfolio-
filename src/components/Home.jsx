@@ -16,12 +16,12 @@ function Home() {
     }); 
     
     return (
-        <div name="home" className="w-full bg-gradient-to-b from-black to-gray-800 min-h-screen pb-16">
+        <div name="home" className="w-full bg-gradient-to-b from-gray-800  to-black min-h-screen pb-16">
             {/* Hero Section */}
             <div className="flex flex-col items-center justify-center py-[15%] md:flex-row max-w-screen-lg mx-auto">
                 <div className="pt-10 px-4">
                     <h1 className="flex flex-col md:flex-row text-white text-4xl px-2 md:px-12 font-semibold">
-                        {`I&apos;m a `}
+                        {`I'm a `}
                         <span className="text-4xl text-orange-500 md:ml-2">
                             {text}
                             <Cursor />
@@ -79,7 +79,7 @@ function Home() {
                         <h3 className="text-2xl font-semibold text-orange-400 mb-3">⚡ The Competitive Programming Advantage</h3>
                         <p className="text-lg leading-relaxed">
                             My competitive programming background isn&apos;t just about solving puzzles—it&apos;s a <b className="text-white">superpower for backend development</b>. 
-                            With <b className="text-orange-400">800+ problems solved</b> across platforms and <b className="text-orange-400">160+ contests participated</b>, 
+                            With <b className="text-orange-400">1000+ problems solved</b> across platforms and <b className="text-orange-400">160+ contests participated</b>, 
                             I&apos;ve developed:
                         </p>
                         <ul className="mt-4 space-y-2 ml-6">
