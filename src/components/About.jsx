@@ -15,7 +15,7 @@ const About = () => {
                 className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full"
             >
                 <div className="pb-4"> 
-                    <p className="text-4xl font-bold inline border-b-4  border-gray-500">About Me</p>
+                    <p className="text-4xl font-bold inline border-b-4 border-orange-500">About Me</p>
                 </div>
            
                 <p className="text-lg mt-10 text-gray-400">
@@ -25,7 +25,7 @@ const About = () => {
                 <br />
             <div className='pb-2 '>
                     <p
-                        className='text-2xl font-semibold border-b-4 inline border-gray-500'>
+                        className='text-2xl font-semibold border-b-4 inline border-orange-500'>
                        Find Me on  
                     </p>
                     <div className='py-6 mx-auto '>
