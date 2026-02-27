@@ -34,7 +34,7 @@ const Experience = () => {
 
                         {experiences.map(({ id, title, company, location, duration, highlights, current }, index) => (
                             <AnimateOnScroll key={id} delay={index * 150}>
-                                <div className='relative pl-12 md:pl-16 pb-12 last:pb-0'>
+                                <div className='relative pl-12 md:pl-16 pb-16 last:pb-0'>
                                     {/* Timeline dot */}
                                     <div className={`absolute left-2.5 md:left-4 top-1 w-4 h-4 rounded-full border-[3px] ${current
                                         ? 'bg-emerald-400 border-emerald-500 shadow-lg shadow-emerald-500/40'
