@@ -1,14 +1,29 @@
 /**
  * Professional experience data
- * @type {Array<{id: number, title: string, company: string, location: string, duration: string, description: string, highlights: Array<string>}>}
+ * @type {Array<{id: number, title: string, company: string, location: string, duration: string, description: string, highlights: Array<string>, current: boolean}>}
  */
 export const experiences = [
+  {
+    id: 0,
+    title: "Software Engineer",
+    company: "Zporter",
+    location: "Sweden | Remote",
+    duration: "Jan 2026 – Present",
+    current: true,
+    description:
+      "Working on a football coaching app and web platform with AI-powered assistant named Zai.",
+    highlights: [
+      "Building and maintaining a football coaching app and web platform with an AI-powered assistant (Zai)",
+      "Contributing to scalable frontend architecture and AI-integrated features",
+    ],
+  },
   {
     id: 1,
     title: "Software Engineer (Intern → Jr. SWE → Mid SWE)",
     company: "AppifyLab",
     location: "Sylhet, Bangladesh",
-    duration: "Feb 2024 – Present",
+    duration: "Feb 2024 – Jan 2026",
+    current: false,
     description:
     "Grew from intern to mid-level engineer, focusing on backend development, system design, and team collaboration.",
     highlights: [
@@ -25,6 +40,7 @@ export const experiences = [
     company: "IIUC Competitive Programming Society",
     location: "Chittagong, Bangladesh",
     duration: "Dec 2021 – Feb 2024",
+    current: false,
     description:
       "Trained students in competitive programming and problem-solving.",
     highlights: [
@@ -38,6 +54,7 @@ export const experiences = [
     company: "International Islamic University Chittagong",
     location: "Chittagong, Bangladesh",
     duration: "Aug 2022 – Jan 2024",
+    current: false,
     description:
       "Supported teaching and student learning in computer science courses.",
     highlights: [
