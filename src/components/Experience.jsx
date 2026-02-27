@@ -28,13 +28,13 @@ const Experience = () => {
                         {[1, 2, 3, 4].map(i => <SkeletonCard key={i} lines={4} />)}
                     </div>
                 ) : (
-                    <div className='relative max-w-3xl mx-auto w-full'>
+                    <div className='relative max-w-3xl mx-auto w-full space-y-10'>
                         {/* Vertical timeline line */}
                         <div className='absolute left-4 md:left-6 top-0 bottom-0 w-0.5 bg-gradient-to-b from-indigo-500 via-indigo-400 to-slate-300 dark:to-gray-700'></div>
 
                         {experiences.map(({ id, title, company, location, duration, highlights, current }, index) => (
                             <AnimateOnScroll key={id} delay={index * 150}>
-                                <div className='relative pl-12 md:pl-16 pb-16 last:pb-0'>
+                                <div className='relative pl-12 md:pl-16'>
                                     {/* Timeline dot */}
                                     <div className={`absolute left-2.5 md:left-4 top-1 w-4 h-4 rounded-full border-[3px] ${current
                                         ? 'bg-emerald-400 border-emerald-500 shadow-lg shadow-emerald-500/40'
