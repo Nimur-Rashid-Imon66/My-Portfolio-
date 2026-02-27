@@ -18,7 +18,7 @@ const Experience = () => {
     return (
         <section name="experience" className="bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-950 w-full min-h-fit text-slate-800 dark:text-white py-20">
             <div className='max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full'>
-                <div className='pb-8 mt-14'>
+                <div className='pb-8'>
                     <p className='text-4xl font-bold inline border-b-4 border-indigo-500'>Experience</p>
                     <p className='py-6 text-slate-500 dark:text-gray-400'>My professional journey and roles</p>
                 </div>

@@ -9,7 +9,7 @@ const Skill = () => {
   return (
     <section
       name="skill"
-      className="bg-gradient-to-b from-gray-50 to-white dark:from-gray-950 dark:to-gray-900 w-full text-slate-800 dark:text-white md:h-screen"
+      className="bg-gradient-to-b from-white to-gray-50 dark:from-gray-950 dark:to-gray-900 w-full text-slate-800 dark:text-white md:h-screen"
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8 mt-14">

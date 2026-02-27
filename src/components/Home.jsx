@@ -51,28 +51,37 @@ function Home() {
                     {/* Backend Engineering Expertise */}
                     <div className="space-y-6 text-slate-600 dark:text-gray-300">
                         <div>
-                            <h3 className="text-2xl font-semibold text-indigo-600 dark:text-indigo-400 mb-3">🚀 Backend Engineering Excellence</h3>
+                            <h3 className="text-2xl font-semibold text-indigo-600 dark:text-indigo-400 mb-3">🚀 What I&apos;m Doing Now</h3>
                             <p className="text-lg leading-relaxed">
-                                At <b className="text-slate-800 dark:text-white">AppifyLab</b>, I&apos;ve architected and developed robust backend systems that power real-world applications. 
+                                I&apos;m currently a <b className="text-slate-800 dark:text-white">Software Engineer at Zporter</b> (Sweden, Remote), working on a 
+                                <b className="text-indigo-600 dark:text-indigo-400"> football coaching app and web platform</b> powered by an AI assistant named <b className="text-indigo-600 dark:text-indigo-400">Zai</b>. 
+                                I contribute to scalable frontend architecture and AI-integrated features that help coaches and players improve their game.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 className="text-2xl font-semibold text-indigo-600 dark:text-indigo-400 mb-3">⚙️ Backend Engineering Background</h3>
+                            <p className="text-lg leading-relaxed">
+                                Previously at <b className="text-slate-800 dark:text-white">AppifyLab</b>, I grew from intern to mid-level engineer, architecting robust backend systems. 
                                 My expertise spans <b className="text-indigo-600 dark:text-indigo-400">RESTful API design</b>, <b className="text-indigo-600 dark:text-indigo-400">database optimization</b>, 
-                                and <b className="text-indigo-600 dark:text-indigo-400">microservices architecture</b>. I&apos;ve implemented critical features including:
+                                and <b className="text-indigo-600 dark:text-indigo-400">system design</b>. Key accomplishments include:
                             </p>
                             <ul className="mt-4 space-y-2 ml-6">
                                 <li className="flex items-start">
                                     <span className="text-indigo-500 mr-2">▸</span>
-                                    <span><b>Role-Based Access Control (RBAC)</b> systems with fine-grained permissions for enterprise security</span>
+                                    <span><b>Role-Based Access Control (RBAC)</b> with fine-grained permissions for enterprise security</span>
                                 </li>
                                 <li className="flex items-start">
                                     <span className="text-indigo-500 mr-2">▸</span>
-                                    <span><b>Payment gateway integrations</b> (Stripe, Mercado Pago) with webhook orchestration and secure transactions</span>
+                                    <span><b>Payment gateway integrations</b> (Stripe, Mercado Pago) with webhook orchestration</span>
                                 </li>
                                 <li className="flex items-start">
                                     <span className="text-indigo-500 mr-2">▸</span>
-                                    <span><b>Real-time communication</b> using WebSockets and Redis Pub/Sub for live messaging and community features</span>
+                                    <span><b>Real-time communication</b> using WebSockets and Redis Pub/Sub</span>
                                 </li>
                                 <li className="flex items-start">
                                     <span className="text-indigo-500 mr-2">▸</span>
-                                    <span><b>Adaptive rate-limiting middleware</b> with Redis to protect APIs and optimize resource usage</span>
+                                    <span><b>Adaptive rate-limiting middleware</b> with Redis for API protection</span>
                                 </li>
                             </ul>
                         </div>
@@ -109,13 +118,8 @@ function Home() {
                             <p className="text-lg leading-relaxed">
                                 This unique combination translates directly into measurable results: I&apos;ve <b className="text-slate-800 dark:text-white">reduced server costs</b> through 
                                 query optimization, <b className="text-slate-800 dark:text-white">improved response times</b> with intelligent caching strategies, and 
-                                <b className="text-slate-800 dark:text-white"> scaled APIs</b> to handle high-traffic loads. My code reviews and mentorship help junior developers 
-                                adopt the same problem-solving mindset, creating a culture of excellence in backend engineering.
-                            </p>
-                            <p className="text-lg leading-relaxed mt-4">
-                                Whether it&apos;s architecting database schemas for complex data models, implementing secure authentication flows with 
-                                <b className="text-indigo-600 dark:text-indigo-400"> Twilio OTP verification</b>, or defining API contracts for seamless frontend integration—I bring both 
-                                theoretical depth and practical experience to every challenge.
+                                <b className="text-slate-800 dark:text-white"> scaled APIs</b> to handle high-traffic loads. Now at Zporter, I apply the same engineering rigor to build 
+                                <b className="text-indigo-600 dark:text-indigo-400"> AI-powered features</b> and scalable frontend architecture for a global sports platform.
                             </p>
                         </div>
                     </div>
