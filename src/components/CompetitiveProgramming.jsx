@@ -14,8 +14,8 @@ const CompetitiveProgramming = () => {
                 </div>
 
                 <div className='grid sm:grid-cols-1 md:grid-cols-3 gap-8 px-12 pt-8 sm:px-0 w-[95%] mx-auto'>
-                    {competitivePlatforms.map((platform) => (
-                        <AnimateOnScroll key={platform.id}>
+                    {competitivePlatforms.map((platform, index) => (
+                        <AnimateOnScroll key={platform.id} delay={index * 100}>
                             <div className='shadow-md shadow-gray-200 dark:shadow-gray-700 rounded-lg py-4 px-2 bg-white dark:bg-gray-800/50 border border-gray-100 dark:border-gray-700 hover:shadow-lg hover:-translate-y-1 transition-all duration-300'>
                                 <div className='flex items-center'>
                                     <img src={platform.src} alt={platform.platform} title={platform.platform} className='pl-3 pr-3 pt-2 rounded-md duration-200 w-[46px] h-[46px] hover:scale-105' />

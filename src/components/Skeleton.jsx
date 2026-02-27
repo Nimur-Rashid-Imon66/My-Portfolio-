@@ -2,11 +2,11 @@ import PropTypes from 'prop-types';
 
 export function SkeletonCard({ lines = 3 }) {
   return (
-    <div aria-busy="true" role="status" className="animate-pulse rounded-lg bg-gray-200 dark:bg-gray-800 p-6 space-y-4">
-      <div className="h-4 w-1/3 rounded bg-gray-300 dark:bg-gray-700" />
-      <div className="h-6 w-2/3 rounded bg-gray-300 dark:bg-gray-700" />
+    <div aria-busy="true" role="status" className="rounded-xl bg-gray-100 dark:bg-gray-800/80 p-6 space-y-4 border border-gray-200 dark:border-gray-700">
+      <div className="h-4 w-1/3 rounded-full skeleton-shimmer" />
+      <div className="h-6 w-2/3 rounded-full skeleton-shimmer" />
       {Array.from({ length: lines }).map((_, i) => (
-        <div key={i} className="h-3 rounded bg-gray-300 dark:bg-gray-700" style={{ width: `${85 - i * 10}%` }} />
+        <div key={i} className="h-3 rounded-full skeleton-shimmer" style={{ width: `${90 - i * 12}%` }} />
       ))}
       <span className="sr-only">Loading...</span>
     </div>

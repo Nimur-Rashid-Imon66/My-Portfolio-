@@ -12,7 +12,7 @@ const Portfolio = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        const timer = setTimeout(() => setLoading(false), 600);
+        const timer = setTimeout(() => setLoading(false), 1200);
         return () => clearTimeout(timer);
     }, []);
 
@@ -30,8 +30,8 @@ const Portfolio = () => {
                     </div>
                 ) : (
                     <div className='grid sm:grid-cols-1 md:grid-cols-3 gap-8 px-12 sm:px-0 w-[90%] mx-auto'>
-                        {projects.map((project) => (
-                            <AnimateOnScroll key={project.id}>
+                        {projects.map((project, index) => (
+                            <AnimateOnScroll key={project.id} delay={index * 100}>
                                 <div className='shadow-md shadow-gray-200 dark:shadow-gray-700 rounded-lg border border-gray-100 dark:border-gray-700 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 bg-white dark:bg-gray-800/50'>
                                     <img src={project.src} alt={project.title} title={project.desc} className='rounded-t-md duration-200 w-full h-[100px] hover:scale-105 object-cover' />
                                     <div className='flex items-center justify-around'>

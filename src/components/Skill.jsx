@@ -18,8 +18,8 @@ const Skill = () => {
           </p>
         </div>
         <div className="grid md:grid-cols-2 text-center gap-6 py-12">
-          {skills.map((category) => (
-            <AnimateOnScroll key={category.id}>
+          {skills.map((category, index) => (
+            <AnimateOnScroll key={category.id} delay={index * 100}>
               <div className="shadow-md hover:shadow-lg hover:shadow-indigo-500/10 rounded-xl py-4 flex flex-col gap-8 bg-white dark:bg-gradient-to-b dark:from-gray-900 dark:to-gray-800 border border-gray-100 dark:border-gray-700 hover:-translate-y-1 transition-all duration-300">
                 <div className="flex gap-5 items-center justify-center border-b rounded-b-md border-b-gray-200 dark:border-b-gray-600 py-6">
                   {category.item.map((skill) => (
