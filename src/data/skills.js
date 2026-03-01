@@ -63,6 +63,11 @@ export const skills = [
         link: "nextjs.svg",
         name: "Next.js",
       },
+      {
+        id: 7,
+        link: "../mui.svg",
+        name: "MUI",
+      },
     ],
   },
   {
@@ -119,6 +124,11 @@ export const skills = [
         id: 4,
         link: "../redis.svg",
         name: "Redis",
+      },
+      {
+        id: 5,
+        link: "../firebase.svg",
+        name: "Firebase",
       },
     ],
   },

@@ -55,7 +55,7 @@ function Home() {
                             <p className="text-lg leading-relaxed">
                                 I&apos;m currently a <b className="text-slate-800 dark:text-white">Software Engineer at Zporter</b> (Sweden, Remote), working on a 
                                 <b className="text-indigo-600 dark:text-indigo-400"> football coaching app and web platform</b> powered by an AI assistant named <b className="text-indigo-600 dark:text-indigo-400">Zai</b>. 
-                                I contribute to scalable frontend architecture and AI-integrated features that help coaches and players improve their game.
+                                I contribute to both frontend and backend development using <b className="text-indigo-600 dark:text-indigo-400">Next.js</b>, <b className="text-indigo-600 dark:text-indigo-400">NestJS</b>, <b className="text-indigo-600 dark:text-indigo-400">MongoDB</b>, <b className="text-indigo-600 dark:text-indigo-400">Firebase</b>, <b className="text-indigo-600 dark:text-indigo-400">MUI</b>, and <b className="text-indigo-600 dark:text-indigo-400">Tailwind</b>.
                             </p>
                         </div>
 
@@ -119,7 +119,7 @@ function Home() {
                                 This unique combination translates directly into measurable results: I&apos;ve <b className="text-slate-800 dark:text-white">reduced server costs</b> through 
                                 query optimization, <b className="text-slate-800 dark:text-white">improved response times</b> with intelligent caching strategies, and 
                                 <b className="text-slate-800 dark:text-white"> scaled APIs</b> to handle high-traffic loads. Now at Zporter, I apply the same engineering rigor to build 
-                                <b className="text-indigo-600 dark:text-indigo-400"> AI-powered features</b> and scalable frontend architecture for a global sports platform.
+                                <b className="text-indigo-600 dark:text-indigo-400"> AI-powered features</b> and scalable full-stack architecture for a global sports platform.
                             </p>
                         </div>
                     </div>

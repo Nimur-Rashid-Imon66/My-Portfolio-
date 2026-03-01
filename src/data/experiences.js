@@ -11,10 +11,10 @@ export const experiences = [
     duration: "Jan 2026 – Present",
     current: true,
     description:
-      "Working on a football coaching app and web platform with AI-powered assistant named Zai.",
+      "Working on a football coaching app and web platform with AI-powered assistant named Zai, contributing to both frontend and backend development.",
     highlights: [
       "Building and maintaining a football coaching app and web platform with an AI-powered assistant (Zai)",
-      "Contributing to scalable frontend architecture and AI-integrated features",
+      "Contributing to both frontend and backend development using Next.js, NestJS, MongoDB, Firebase, MUI, and Tailwind",
     ],
   },
   {
