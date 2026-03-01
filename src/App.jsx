@@ -15,14 +15,16 @@ import ErrorBoundary from './components/ErrorBoundary.jsx';
 export default function App() {
   return (
     <ErrorBoundary>
-      <div>
+      <div className="min-h-screen bg-white dark:bg-gray-950 animate-fade-in">
         <Navbar />
-        <Home />
-        <CompetitiveProgramming />
-        <Portfolio />
-        <Skill />
-        <Experience />
-        <Contact />
+        <main>
+          <Home />
+          <CompetitiveProgramming />
+          <Portfolio />
+          <Skill />
+          <Experience />
+          <Contact />
+        </main>
         <Footer />
       </div>
     </ErrorBoundary>

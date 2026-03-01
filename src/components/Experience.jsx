@@ -1,64 +1,94 @@
+import { useState, useEffect } from 'react';
 import { experiences } from '../data/experiences';
+import AnimateOnScroll from './AnimateOnScroll';
+import { SkeletonCard } from './Skeleton';
 
 /**
- * Experience section displaying professional work history in timeline format
+ * Experience section displaying professional work history
  * @returns {JSX.Element} Experience component
  */
 const Experience = () => {
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        const timer = setTimeout(() => setLoading(false), 1200);
+        return () => clearTimeout(timer);
+    }, []);
+
     return (
-        <div name="experience" className="bg-gradient-to-b from-gray-800 to-black w-full min-h-fit text-white py-20">
+        <section name="experience" className="bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-950 w-full min-h-fit text-slate-800 dark:text-white py-20">
             <div className='max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full'>
-                  <div className='pb-8 mt-14'>
-                    <p className='text-4xl font-bold inline border-b-4 border-orange-500'>Experience</p>
-                    <p className='py-6 text-gray-400'>My professional journey and roles</p>
+                <div className='pb-8'>
+                    <p className='text-4xl font-bold inline border-b-4 border-indigo-500'>Experience</p>
+                    <p className='py-6 text-slate-500 dark:text-gray-400'>My professional journey and roles</p>
                 </div>
 
-                <div className='relative px-4 md:px-12'>
-                    {/* Vertical line for timeline */}
-                    <div className='hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-orange-500 to-gray-600'></div>
-                    
-                    {experiences.map(({ id, title, company, location, duration, highlights }, index) => (
-                        <div key={id} className={`relative mb-12 md:mb-16 ${index % 2 !== 0 ? 'md:pr-1/2' : 'md:pl-1/2'}`}>
-                            {/* Timeline content */}
-                            <div className={`flex flex-col md:flex-row items-center ${index % 2 !== 0 ? 'md:justify-end' : 'md:justify-start'}`}>
-                                {/* Card */}
-                                <div className={`w-full md:w-5/12 bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-lg shadow-xl border border-gray-700 hover:border-orange-500 transition-all duration-300 hover:shadow-2xl hover:shadow-orange-500/20 ${index % 2 === 0 ? 'md:mr-8' : 'md:ml-8'}`}>
-                                    {/* Duration badge */}
-                                    <div className='inline-block bg-orange-500 text-black text-xs font-semibold px-3 py-1 rounded-full mb-3'>
-                                        {duration}
+                {loading ? (
+                    <div className='space-y-6 max-w-3xl mx-auto w-full' aria-busy="true">
+                        {[1, 2, 3, 4].map(i => <SkeletonCard key={i} lines={4} />)}
+                    </div>
+                ) : (
+                    <div className='relative max-w-3xl mx-auto w-full space-y-10'>
+                        {/* Vertical timeline line */}
+                        <div className='absolute left-4 md:left-6 top-0 bottom-0 w-0.5 bg-gradient-to-b from-indigo-500 via-indigo-400 to-slate-300 dark:to-gray-700'></div>
+
+                        {experiences.map(({ id, title, company, location, duration, highlights, current }, index) => (
+                            <AnimateOnScroll key={id} delay={index * 150}>
+                                <div className='relative pl-12 md:pl-16'>
+                                    {/* Timeline dot */}
+                                    <div className={`absolute left-2.5 md:left-4 top-1 w-4 h-4 rounded-full border-[3px] ${current
+                                        ? 'bg-emerald-400 border-emerald-500 shadow-lg shadow-emerald-500/40'
+                                        : 'bg-indigo-400 border-indigo-500 shadow-lg shadow-indigo-500/30'
+                                    }`}>
+                                        {current && (
+                                            <span className='absolute inset-0 rounded-full animate-ping bg-emerald-400 opacity-40'></span>
+                                        )}
                                     </div>
-                                    
-                                    <h3 className='text-xl md:text-2xl font-bold text-white mb-2'>{title}</h3>
-                                    <p className='text-orange-400 font-semibold mb-1 flex items-center'>
-                                        <span className='mr-2'>🏢</span>
-                                        {company}
-                                    </p>
-                                    <p className='text-gray-400 text-sm mb-3 flex items-center'>
-                                        <span className='mr-2'>📍</span>
-                                        {location}
-                                    </p>
-                                    
-                                    {/* Highlights as bullet points */}
-                                    {highlights && highlights.length > 0 && (
-                                        <ul className='text-gray-300 text-sm leading-relaxed space-y-2 mt-4'>
-                                            {highlights.map((highlight, idx) => (
-                                                <li key={idx} className='flex items-start'>
-                                                    <span className='text-orange-500 mr-2 mt-1 flex-shrink-0'>•</span>
-                                                    <span>{highlight}</span>
-                                                </li>
-                                            ))}
-                                        </ul>
-                                    )}
+
+                                    {/* Duration & badges */}
+                                    <div className='flex flex-wrap items-center gap-2 mb-2'>
+                                        <span className='text-xs font-semibold text-slate-500 dark:text-gray-400 tracking-wide uppercase'>
+                                            {duration}
+                                        </span>
+                                        {current && (
+                                            <span className='inline-flex items-center gap-1 bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-400 text-xs font-semibold px-2 py-0.5 rounded-full'>
+                                                <span className='w-1.5 h-1.5 rounded-full bg-emerald-500'></span>
+                                                Current
+                                            </span>
+                                        )}
+                                    </div>
+
+                                    {/* Card */}
+                                    <div className='bg-white dark:bg-gray-800/60 rounded-xl p-5 md:p-6 border border-gray-200 dark:border-gray-700/80 shadow-sm hover:shadow-md hover:border-indigo-300 dark:hover:border-indigo-500/50 transition-all duration-300'>
+                                        <h3 className='text-lg md:text-xl font-bold text-slate-800 dark:text-white leading-snug'>{title}</h3>
+                                        <div className='flex flex-wrap items-center gap-x-4 gap-y-1 mt-1.5 mb-3 text-sm'>
+                                            <span className='text-indigo-600 dark:text-indigo-400 font-semibold flex items-center gap-1'>
+                                                🏢 {company}
+                                            </span>
+                                            <span className='text-slate-400 dark:text-gray-500 flex items-center gap-1'>
+                                                📍 {location}
+                                            </span>
+                                        </div>
+
+                                        {/* Highlights */}
+                                        {highlights && highlights.length > 0 && (
+                                            <ul className='text-slate-600 dark:text-gray-300 text-sm leading-relaxed space-y-1.5'>
+                                                {highlights.map((highlight, idx) => (
+                                                    <li key={idx} className='flex items-start gap-2'>
+                                                        <span className='mt-1.5 flex-shrink-0 w-1 h-1 rounded-full bg-indigo-400'></span>
+                                                        <span>{highlight}</span>
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        )}
+                                    </div>
                                 </div>
-                                
-                                {/* Timeline dot */}
-                                <div className='hidden md:block absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-orange-500 rounded-full border-4 border-gray-900 shadow-lg shadow-orange-500/50'></div>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-            </div> 
-        </div>
+                            </AnimateOnScroll>
+                        ))}
+                    </div>
+                )}
+            </div>
+        </section>
     );
 };
 
